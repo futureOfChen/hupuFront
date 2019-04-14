@@ -1,0 +1,93 @@
+.clearfix:before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.allContent{
+    padding-top:154px;
+    padding-bottom: 50px;
+}
+.headFixed{
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+#main{
+
+    .header{
+        background-color: rgb(158, 23, 23);
+        // height: 80px;
+        // width: 100%;
+        padding: 50px 10px 30px 10px;
+
+        .text{
+            color: white;
+            font-size: 20px;
+            padding-right: 10px;
+            width: 20%;
+
+        }
+        .inputBox{
+            border-bottom: 1px white solid;
+            display: inline-block;
+            width: 70%;
+            // padding-left: 10px;
+            box-sizing: border-box;
+            input{
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+            }
+            #search::-webkit-input-placeholder{
+                color: white;
+            
+            }
+        }
+        .right{
+            display: inline-block;
+            width: 10%;
+            padding-left: 10px;
+            box-sizing: border-box;
+            .icon{
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                background-color: pink;
+            }
+            .spanText{
+                font-size: 12px;
+                color: white;
+            }
+        }
+    }
+    .headerNav{
+        padding: 10px;
+        width: 100%;
+        overflow-x: scroll;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        ul{
+            width: 500px;
+            li{
+                float: left;
+                padding-left: 10px;
+                font-size: 18px;
+                color: rgb(26, 26, 26)
+            }
+        }
+        .navIcon{
+            background-color: pink;
+            width: 20px;
+            height: 20px;
+            position: fixed;
+            right: 0px;
+            top:125px;
+        }
+    }
+    .game{
+        padding: 5px;
+        background-color: rgb(233, 233, 233)
+    }
+}
