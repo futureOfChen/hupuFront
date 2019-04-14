@@ -26,7 +26,7 @@ class Login extends Component{
     }    
         // 
     getCode(){
-        axios.get('http://192.168.1.100:8000/getCode')
+        axios.get('http://192.168.1.100:8000/user/getCode')
         .then(res=>{
             let {code} = res.data
             this.setState({code})
