@@ -28,8 +28,10 @@ class Login extends Component{
     getCode(){
         axios.get('http://192.168.1.100:8000/user/getCode')
         .then(res=>{
-            let {code} = res.data
+            console.log(res)
+            let {code} = res.data.data
             this.setState({code})
+            console.log(code)
             alert(`验证码为:${code}`)
         })
 
@@ -48,11 +50,13 @@ class Login extends Component{
             }
         }else{
             if(psd==code){
-                axios.post('http://192.168.1.100:8000/login',{
+                axios.post('http://192.168.1.100:8000/user/login',{
                     phone:text
                 })
                 .then(res=>{
                     let {statusCode} = res.data
+                    console.log(res)
+                    console.log(text)
                     if(statusCode==200){
                         this.props.history.push('/main')
                     }else{
