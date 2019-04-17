@@ -1,0 +1,36 @@
+
+.clearfix:before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}#headerNav{
+    // padding: 10px;
+    // width: 100%;
+    // overflow-x: scroll;
+    // background-color: rgb(255, 255, 255);
+    // position: relative;
+    // overflow-x:visible
+    ul{
+        width: 500px;
+        overflow-x:visible
+        li{
+            float: left;
+            padding-left: 10px;
+            font-size: 18px;
+            color: rgb(58, 58, 58)
+        }
+        .borderRed{
+            border-bottom: 2px solid red;
+            color: black;
+        }
+    }
+    .navIcon{
+        background-color: pink;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 35px;
+        top:8px;
+    }
+}

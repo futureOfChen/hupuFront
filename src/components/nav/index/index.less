@@ -1,0 +1,25 @@
+.clearfix:before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#indexpage{
+    .head{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+    }
+    .allContent{
+        padding-top:150px;
+        padding-bottom: 50px;
+
+        height: 100%;
+        overflow-y: scroll;
+        .game{
+            padding: 5px;
+            background-color: rgb(233, 233, 233)
+        }
+    }
+}

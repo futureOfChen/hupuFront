@@ -1,0 +1,28 @@
+.clearfix:before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#footNav{
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    li{
+        float: left;
+        width: 20%;
+        .footIcon{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(192, 31, 31);
+            margin: 0 auto;
+        }
+        .footText{
+            text-align: center;
+            padding-top:5px;
+        }
+    }
+    
+}

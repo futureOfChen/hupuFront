@@ -1,0 +1,30 @@
+.clearfix:before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#nbaNav{
+    padding: 5px 20px;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: scroll;
+    background-color: white;
+    &::-webkit-scrollbar { 
+        // width: 0 !important;
+        display: none !important;
+    }
+    ul{
+        width: 400px;
+        
+        li{
+            float: left;
+            padding-right: 20px;
+            color: rgb(134, 134, 134);
+
+        }
+        .fontred{
+            color: rgb(155, 2, 2);
+        }
+    }
+}

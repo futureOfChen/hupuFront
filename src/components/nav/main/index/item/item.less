@@ -1,0 +1,74 @@
+.clearfix:before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.item{
+    float: left;
+    background-color: white;
+    width: 50%;
+    // height: 90px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-clip: content-box;
+    .detail{
+        padding: 8px;
+        .title{
+            span{
+                font-size: 14px;
+            }
+            .text{
+                float: right;
+                background-color: pink;
+                border-radius: 25px;
+                font-size: 12px;
+                padding: 2px 5px;
+            }
+
+        }
+        .content{
+            padding: 0 10px;
+            .left,.middle,.right{
+                
+                float: left;
+            }
+            .left{
+                width: 30%;
+                .leftIcon{
+                    background-color: pink;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50px;
+                    margin: 5px auto;
+                }
+                .text{
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+            .middle{
+                width: 40%;
+                padding-top: 15px;
+                font-size: 12px;
+                text-align: center;
+            }
+            .right{
+                width: 30%;
+                .rightIcon{
+                    background-color: pink;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50px;
+                    margin: 5px auto;
+                    // margin: 0 auto;
+                }
+                .text{
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
